@@ -11,7 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('default');
-});
+//Route::get('/', function () {
+//    return view('default');
+//});
 //Route::resource('/', 'IndexController');
+Route::get('/', 'IndexController@index');
