@@ -1,4 +1,4 @@
 @extends('default')
 @section('content')
-    ble ble
-@endsection
+    sraty taty
+@stop

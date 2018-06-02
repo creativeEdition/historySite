@@ -11,8 +11,9 @@
 <header>
     nagłówek- stała część strony
 </header>
-
-@yield('content')
+<div class="container">
+    @yield('content')
+</div>
 
 
 @footer
