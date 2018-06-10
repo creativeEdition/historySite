@@ -10411,8 +10411,14 @@ a.text-dark:focus {
   }
 }
 
-.row.header-img {
-  height: 500px !important;
-  margin: 0px !important;
+header .header-img img {
+  height: 300px;
+  width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  footer .col-12 {
+    text-align: center;
+  }
 }
 

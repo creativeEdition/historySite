@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <title>Historia lokalna-historia globalna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
 </head>
 
 <body>
 <header>
-    <div class="container text-center">
-        <div class="row header-img">
-            <img src="/images/heading-img.jpg" class="img-fluid">
+    <div class="container">
+        <div class="card-header">menu</div>
+    </div>
+    <div class="container">
+        <div class="header-img">
+            <img src="/images/heading-img.jpg" >
         </div>
     </div>
-
 </header>
 <div class="container">
     @yield('content')
