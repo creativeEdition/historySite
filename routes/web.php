@@ -15,4 +15,4 @@
 //    return view('default');
 //});
 //Route::resource('/', 'IndexController');
-Route::get('/', 'IndexController@index');
+Route::get('/', 'IndexController@index')->name('index');

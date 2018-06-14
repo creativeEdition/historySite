@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Historia lokalna-historia globalna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
@@ -12,13 +13,12 @@
 <body>
 <header>
     <div class="container">
-        <div class="card-header">menu</div>
-    </div>
-    <div class="container">
         <div class="header-img">
             <img src="/images/heading-img.jpg" >
         </div>
     </div>
+    @menu
+    @endmenu
 </header>
 <div class="container">
     @yield('content')

@@ -14,6 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        Blade::component('layouts.menu', 'menu');
         Blade::component('layouts.footer', 'footer');
     }
 

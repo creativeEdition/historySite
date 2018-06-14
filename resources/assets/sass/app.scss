@@ -4,12 +4,19 @@
 @import "variables";
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+//Font-awesome
+@import "~font-awesome/scss/font-awesome.scss";
 
 header {
   .header-img {
     img {
       height: 300px;
       width: 100%;
+    }
+  }
+  .navbar{
+    .fab{
+      color: #ffffff;
     }
   }
 }
