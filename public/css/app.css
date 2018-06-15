@@ -13475,9 +13475,15 @@ header .navbar .fab {
   color: #ffffff;
 }
 
-@media screen and (max-width: 991px) {
-  footer .col-12 {
-    text-align: center;
+footer .logo-footer img {
+  height: 150px;
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  footer .logo-footer img {
+    height: 150px;
+    width: 200px;
   }
 }
 
