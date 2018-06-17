@@ -20,13 +20,30 @@ header {
     }
   }
 }
+section.newest-articles{
+  .container{
+    position: relative;
+    margin: 0;
+    width: 100%;
+    .content{
+      position: absolute;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      color: #f1f1f1;
+      padding: 20px;
+    }
+  }
+
+}
 footer{
   .logo-footer{
     img{
       height: 150px;
       width: 100%;
     }
-
+  }
+  .links a{
+    color: white;
   }
 }
 

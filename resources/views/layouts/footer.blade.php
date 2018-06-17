@@ -13,7 +13,7 @@
             </div>
             <hr class="w-100 clearfix d-md-none">
 
-            <div class="col-12 col-md-3 mx-auto mt-3">
+            <div class="links col-12 col-md-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Linki</h6>
                 <p><a href="#!">Twoje konto</a></p>
                 <p><a href="#!">Regulamin</a></p>
@@ -21,7 +21,7 @@
             </div>
             <hr class="w-100 clearfix d-md-none">
 
-            <div class="col-12 col-md-3 mx-auto mt-3">
+            <div class="links col-12 col-md-3 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Kontakt</h6>
                 <p><a href="#" class="btn-floating btn-sm rgba-white-slight"><i class="fa fa-envelope mr-3"></i>Napisz do nas!</a></p>
                 <p><a href="#" class="btn-floating btn-sm rgba-white-slight"><i class="fa fa-facebook mr-3"></i>Nasz facebook</a></p>
