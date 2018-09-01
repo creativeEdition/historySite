@@ -10,7 +10,12 @@ let mix = require('laravel-mix');
  | file for the application as well as bundling up all the JS files.
  |
  */
-
+if (!mix.inProduction()) {
+    mix.webpackConfig({
+        devtool: 'source-map'
+    })
+        .sourceMaps()
+}
 mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/jquery-3.3.1.js', 'public/js')
     .js('resources/assets/js/popper-1.14.4.js', 'public/js')
