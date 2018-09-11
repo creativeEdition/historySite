@@ -10,7 +10,7 @@
 
 </head>
 
-<body>
+<body class="@yield('body_class')">
 <header>
     <div class="container">
         <div class="header-img">
@@ -20,6 +20,7 @@
     @menu
     @endmenu
 </header>
+
 <div class="container">
     @yield('content')
 </div>

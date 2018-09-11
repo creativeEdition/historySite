@@ -20,7 +20,7 @@ mix.js('resources/assets/js/app.js', 'public/js')
     .js('resources/assets/js/jquery-3.3.1.js', 'public/js')
     .js('resources/assets/js/popper-1.14.4.js', 'public/js')
     .js('resources/assets/js/bootstrap-4.1.3.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css')
+    .sass('resources/assets/sass/app.scss', 'public/css')
     .copyDirectory('resources/assets/images/img-article', 'public/images/img-article')
     .copyDirectory('resources/assets/css/bootstrap.css', 'public/css');
 
