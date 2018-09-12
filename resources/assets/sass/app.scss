@@ -21,16 +21,30 @@ header {
   }
 }
 section.newest-articles{
-  .container{
-    position: relative;
-    margin: 0;
-    width: 100%;
-    .content{
-      position: absolute;
-      bottom: 0;
-      background: rgba(0,0,0,0.5);
-      color: #f1f1f1;
-      padding: 20px;
+  .flexslider{
+    &.mainSlider{
+      li{
+        img{
+          &.mainSliderImages{
+            height: 500px !important;
+            width: 100%;
+          }
+        }
+      }
+      .flex-nav-prev{
+        a:before{
+          font-family: "FontAwesome";
+          content: '\f104';
+          color: #b3d7ff;
+        }
+      }
+      .flex-nav-next{
+        a:before{
+          font-family: "FontAwesome";
+          content: '\f105';
+          color: #b3d7ff;
+        }
+      }
     }
   }
 

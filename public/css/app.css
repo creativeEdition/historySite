@@ -13475,18 +13475,21 @@ header .navbar .fab {
   color: #ffffff;
 }
 
-section.newest-articles .container {
-  position: relative;
-  margin: 0;
+section.newest-articles .flexslider.mainSlider li img.mainSliderImages {
+  height: 500px !important;
   width: 100%;
 }
 
-section.newest-articles .container .content {
-  position: absolute;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  padding: 20px;
+section.newest-articles .flexslider.mainSlider .flex-nav-prev a:before {
+  font-family: "FontAwesome";
+  content: '\F104';
+  color: #b3d7ff;
+}
+
+section.newest-articles .flexslider.mainSlider .flex-nav-next a:before {
+  font-family: "FontAwesome";
+  content: '\F105';
+  color: #b3d7ff;
 }
 
 footer .logo-footer img {

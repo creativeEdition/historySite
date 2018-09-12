@@ -70,7 +70,7 @@
 "use strict";
 
 
-var bind = __webpack_require__(6);
+var bind = __webpack_require__(7);
 var isBuffer = __webpack_require__(19);
 
 /*global toString:true*/
@@ -13442,28 +13442,10 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(7)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(6)))
 
 /***/ }),
 /* 6 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-module.exports = function bind(fn, thisArg) {
-  return function wrap() {
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-    return fn.apply(thisArg, args);
-  };
-};
-
-
-/***/ }),
-/* 7 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -13650,6 +13632,24 @@ process.chdir = function (dir) {
     throw new Error('process.chdir is not supported');
 };
 process.umask = function() { return 0; };
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function bind(fn, thisArg) {
+  return function wrap() {
+    var args = new Array(arguments.length);
+    for (var i = 0; i < args.length; i++) {
+      args[i] = arguments[i];
+    }
+    return fn.apply(thisArg, args);
+  };
+};
 
 
 /***/ }),
@@ -13907,7 +13907,7 @@ module.exports = Cancel;
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(13);
-module.exports = __webpack_require__(43);
+module.exports = __webpack_require__(38);
 
 
 /***/ }),
@@ -13916,7 +13916,7 @@ module.exports = __webpack_require__(43);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__application__ = __webpack_require__(60);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__application__ = __webpack_require__(36);
 
 /**
  * First we will load all of this project's JavaScript dependencies which
@@ -13957,24 +13957,6 @@ $(document).ready(function () {
     } catch (e) {
         console.error(e);
     }
-
-    // let slideIndex = 1;
-    // showDivs(slideIndex);
-    //
-    // function plusDivs(n) {
-    //     showDivs(slideIndex += n);
-    // }
-    //
-    // function showDivs(n) {
-    //     var i;
-    //     var x = document.getElementsByClassName("mySlides");
-    //     if (n > x.length) {slideIndex = 1}
-    //     if (n < 1) {slideIndex = x.length} ;
-    //     for (i = 0; i < x.length; i++) {
-    //         x[i].style.display = "none";
-    //     }
-    //     x[slideIndex-1].style.display = "block";
-    // }
 });
 
 /***/ }),
@@ -35098,7 +35080,7 @@ module.exports = __webpack_require__(18);
 
 
 var utils = __webpack_require__(0);
-var bind = __webpack_require__(6);
+var bind = __webpack_require__(7);
 var Axios = __webpack_require__(20);
 var defaults = __webpack_require__(5);
 
@@ -35973,54 +35955,28 @@ module.exports = function spread(callback) {
 
 
 /***/ }),
-/* 36 */,
-/* 37 */,
-/* 38 */,
-/* 39 */,
-/* 40 */,
-/* 41 */,
-/* 42 */,
-/* 43 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 44 */,
-/* 45 */,
-/* 46 */,
-/* 47 */,
-/* 48 */,
-/* 49 */,
-/* 50 */,
-/* 51 */,
-/* 52 */,
-/* 53 */,
-/* 54 */,
-/* 55 */,
-/* 56 */,
-/* 57 */,
-/* 58 */,
-/* 59 */,
-/* 60 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return App; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_MainSlider__ = __webpack_require__(37);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 //tu beda importy innych plikow js
+
+
 var App = function () {
     function App() {
         _classCallCheck(this, App);
     }
 
     _createClass(App, [{
-        key: "initialize",
+        key: 'initialize',
         value: function initialize() {
-            this.initMainArticleSlider();
+            this.initMainSlider();
         }
         // initfunkcja(){
         //     const zmienna = new Klasa();
@@ -36029,13 +35985,54 @@ var App = function () {
         // }
 
     }, {
-        key: "initMainArticleSlider",
-        value: function initMainArticleSlider() {}
+        key: 'initMainSlider',
+        value: function initMainSlider() {
+            var mainSlider = new __WEBPACK_IMPORTED_MODULE_0__components_MainSlider__["a" /* MainSlider */]();
+            mainSlider.init();
+        }
     }]);
 
     return App;
 }();
 // export default App -gdy nie dam na poczatku nazwy klasy export
+
+/***/ }),
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainSlider; });
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MainSlider = function () {
+    function MainSlider() {
+        _classCallCheck(this, MainSlider);
+    }
+
+    _createClass(MainSlider, [{
+        key: 'init',
+        value: function init() {
+            var self = this;
+            self.mainSlider();
+        }
+    }, {
+        key: 'mainSlider',
+        value: function mainSlider() {
+            $('.flexslider').flexslider({});
+        }
+    }]);
+
+    return MainSlider;
+}();
+/* unused harmony default export */ var _unused_webpack_default_export = (MainSlider);
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 /******/ ]);
