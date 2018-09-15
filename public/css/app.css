@@ -13475,21 +13475,58 @@ header .navbar .fab {
   color: #ffffff;
 }
 
-section.newest-articles .flexslider.mainSlider li img.mainSliderImages {
+section.newest-articles .jumbotron-fluid.main-slider-wrapper {
+  background-color: gray;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider {
+  border: none;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider .flex-control-nav {
+  bottom: 0;
+  z-index: 10;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider li img.mainSliderImages {
   height: 500px !important;
   width: 100%;
 }
 
-section.newest-articles .flexslider.mainSlider .flex-nav-prev a:before {
-  font-family: "FontAwesome";
-  content: '\F104';
-  color: #b3d7ff;
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider li .flex-caption {
+  max-width: 600px;
+  margin-bottom: 40px;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
-section.newest-articles .flexslider.mainSlider .flex-nav-next a:before {
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider li .flex-caption p.main-slider-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider li .flex-caption p.main-slider-subtitle {
+  font-weight: normal;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider .flex-nav-prev a:before {
+  font-family: "FontAwesome";
+  content: '\F104';
+  color: white;
+}
+
+section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider .flex-nav-next a:before {
   font-family: "FontAwesome";
   content: '\F105';
-  color: #b3d7ff;
+  color: white;
 }
 
 footer .logo-footer img {
@@ -13499,6 +13536,16 @@ footer .logo-footer img {
 
 footer .links a {
   color: white;
+}
+
+@media screen and (max-width: 991px) {
+  section.newest-articles .jumbotron-fluid.main-slider-wrapper {
+    background-color: gray;
+  }
+
+  section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSlider li .flex-caption {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 767px) {
