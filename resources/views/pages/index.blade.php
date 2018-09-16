@@ -7,6 +7,7 @@
         </section>
 
         <section class="list-articles">
-        lista
+            @component('/components/article-list')
+            @endcomponent
         </section>
 @endsection

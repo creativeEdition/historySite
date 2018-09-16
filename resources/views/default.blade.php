@@ -14,8 +14,10 @@
 <header>
     <div class="container-fluid">
         <div class="row">
-            <div class="header-img">
-                <img src="{{asset('images/heading-img.jpg')}}" >
+            <div class="col-12 p-0">
+                <div class="header-img">
+                    <img src="{{asset('images/heading-img.jpg')}}" >
+                </div>
             </div>
         </div>
     </div>

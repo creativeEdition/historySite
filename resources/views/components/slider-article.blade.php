@@ -1,6 +1,6 @@
 <div class="jumbotron-fluid main-slider-wrapper">
-    <div class="container">
-        <div class="flexslider mainSlider">
+    <div class="container p-0">
+        <div class="flexslider mainSlider mb-0">
             <ul class="slides">
                 <li>
                     <img src="{{asset('images/img-article/img1.jpg')}}"  class="mainSliderImages"/>

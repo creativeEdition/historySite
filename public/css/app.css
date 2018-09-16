@@ -13529,6 +13529,25 @@ section.newest-articles .jumbotron-fluid.main-slider-wrapper .flexslider.mainSli
   color: white;
 }
 
+section.list-articles .article-list-wrapper:nth-child(odd) {
+  background-color: #F5F5F5;
+}
+
+section.list-articles .article-list-wrapper:nth-child(even) {
+  background-color: #EBEBEB;
+}
+
+section.list-articles .article-list-post {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+section.list-articles .article-list-post .article-list-image {
+  width: 100%;
+  height: auto;
+}
+
 footer .logo-footer img {
   height: 150px;
   width: 100%;

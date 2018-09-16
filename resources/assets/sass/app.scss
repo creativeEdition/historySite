@@ -14,66 +14,67 @@ header {
       width: 100%;
     }
   }
-  .navbar{
-    .fab{
+  .navbar {
+    .fab {
       color: #ffffff;
     }
   }
 }
-section.newest-articles{
-  .jumbotron-fluid{
-    &.main-slider-wrapper{
+
+section.newest-articles {
+  .jumbotron-fluid {
+    &.main-slider-wrapper {
       background-color: gray;
-      .flexslider{
-        &.mainSlider{
-          .flex-control-nav{
+      .flexslider {
+        &.mainSlider {
+          .flex-control-nav {
             bottom: 0;
             z-index: 10;
           }
 
           border: none;
-          li{
-            img{
-              &.mainSliderImages{
+          li {
+            img {
+              &.mainSliderImages {
                 height: 500px !important;
                 width: 100%;
               }
             }
 
-             .flex-caption{
-                max-width: 600px;
-                margin-bottom: 40px;
-                padding: 10px;
-                position: absolute;
-                bottom: 0;
-                left: 50%;
-                transform: translateX(-50%);
-                //text-align: center;
-                background: rgba(0, 0, 0, 0.5);
-                color: white;
-               p{
-                 &.main-slider-title{
-                   font-weight: bold;
-                   margin-bottom: 4px;
-                 }
-                 &.main-slider-subtitle{
-                   font-weight: normal;
-                   margin-bottom: 2px;
-                   font-size: 14px;
-                 }
-               }
+            .flex-caption {
+              max-width: 600px;
+              margin-bottom: 40px;
+              padding: 10px;
+              position: absolute;
+              bottom: 0;
+              left: 50%;
+              transform: translateX(-50%);
+              //text-align: center;
+              background: rgba(0, 0, 0, 0.5);
+              color: white;
+              p {
+                &.main-slider-title {
+                  font-weight: bold;
+                  margin-bottom: 4px;
+                }
+                &.main-slider-subtitle {
+                  font-weight: normal;
+                  margin-bottom: 2px;
+                  font-size: 14px;
+                }
               }
+            }
 
           }
-          .flex-nav-prev{
-            a:before{
+          .flex-nav-prev {
+            a:before {
               font-family: "FontAwesome";
               content: '\f104';
               color: white;
             }
           }
-          .flex-nav-next{
-            a:before{
+          .flex-nav-next {
+            a:before {
               font-family: "FontAwesome";
               content: '\f105';
               color: white;
@@ -84,26 +85,49 @@ section.newest-articles{
     }
   }
 }
-footer{
-  .logo-footer{
-    img{
+
+section.list-articles {
+  .article-list-wrapper:nth-child(odd){
+    background-color: #F5F5F5;
+
+  }
+  .article-list-wrapper:nth-child(even){
+    background-color: #EBEBEB;
+
+  }
+  .article-list-post {
+    background-color:  rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    .article-list-image{
+      width: 100%;
+      height: auto;
+    }
+  }
+
+}
+
+footer {
+  .logo-footer {
+    img {
       height: 150px;
       width: 100%;
     }
   }
-  .links a{
+  .links a {
     color: white;
   }
 }
+
 @media screen and (max-width: 991px) {
-  section.newest-articles{
-    .jumbotron-fluid{
-      &.main-slider-wrapper{
+  section.newest-articles {
+    .jumbotron-fluid {
+      &.main-slider-wrapper {
         background-color: gray;
-        .flexslider{
-          &.mainSlider{
-            li{
-              .flex-caption{
+        .flexslider {
+          &.mainSlider {
+            li {
+              .flex-caption {
                 text-align: center;
               }
             }
@@ -113,10 +137,11 @@ footer{
     }
   }
 }
+
 @media screen and (max-width: 767px) {
   footer {
-    .logo-footer{
-      img{
+    .logo-footer {
+      img {
         height: 150px;
         width: 200px;
       }
